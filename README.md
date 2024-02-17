@@ -3,9 +3,11 @@ It is my First ever project that I am publishing. The project will help anyone w
 
 
 It a simple full web app created through
--JavaScript
+
 -HTML
+
 -CSS
+
 -Python
 
 # Image Colorization
