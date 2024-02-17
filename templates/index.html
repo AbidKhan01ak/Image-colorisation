@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Colorization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+
+<body>
+    <header>
+        Select any Black and white Image and get it colored.
+    </header>
+    <h1>Image Colorization</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
+        <input class="chooseFile" type="file" name="file" accept="image/*" id="fileInput">
+        <input type="submit" value="Upload" onclick="showPreview()">
+    </form>
+    <div id="image-container">
+        <img id="preview" alt="Your Image">
+    </div>
+    <footer>
+        <p>Made with ❤️ by Ak Studios
+            <i style="float: right; margin-right:  3%; font-size: 25px;" class="fa"
+                onclick="redirectToGitHub()">&#xf09b;</i>
+            <i style="float: right; margin-right: 1%; font-size: 25px;" class="fa"
+                onclick="redirectToLinkedIn()">&#xf08c;</i>
+
+        </p>
+    </footer>
+    <script>
+        function showPreview() {
+            var fileInput = document.getElementById('fileInput');
+            var preview = document.getElementById('preview');
+            var file = fileInput.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+
+        function redirectToLinkedIn() {
+            window.location.href = 'https://www.linkedin.com/in/abid-khan-ak';
+        }
+
+        function redirectToGitHub() {
+            window.location.href = 'https://github.com/AbidKhan01ak';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/* style_result.css */
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Libre Baskerville', sans-serif;
+    background-color: #FDF0D1;
+    text-align: center;
+}
+
+header {
+    text-emphasis: none;
+    text-align: center;
+    background-color: #D04848;
+    color: white;
+    padding: 15px;
+}
+
+img {
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #944E63;
+    color: white;
+}
+
+footer i {
+    font-size: 25px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Libre Baskerville', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D04848;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #944E63;
+}

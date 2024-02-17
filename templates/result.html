@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorized Image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+
+<body>
+    <header>
+        Your colorised Image. Click Save to download it!
+    </header>
+
+    <img src="{{ url_for('uploaded_file', filename=colorized_image) }}" alt="Colorized Image">
+
+    <!-- Add a button to save the image -->
+    <button onclick="saveImage()">Save</button>
+
+    <footer>
+        <p>Made with ❤️ by Ak Studios
+            <i style="float: right; margin-right:  3%; font-size: 25px;" class="fa"
+                onclick="redirectToGitHub()">&#xf09b;</i>
+            <i style="float: right; margin-right: 1%; font-size: 25px;" class="fa"
+                onclick="redirectToLinkedIn()">&#xf08c;</i>
+        </p>
+    </footer>
+
+    <script>
+        function saveImage() {
+            // Get the colorized image URL
+            var imageUrl = "{{ url_for('uploaded_file', filename=colorized_image) }}";
+
+            // Create an anchor element
+            var link = document.createElement('a');
+
+            // Set the href attribute to the image URL
+            link.href = imageUrl;
+
+            // Set the download attribute with a suggested filename
+            link.download = 'colorized_image.jpg';
+
+            // Simulate a click on the anchor element to trigger the download
+            link.click();
+        }
+
+        function redirectToLinkedIn() {
+            // Add your LinkedIn URL here
+            window.location.href = 'https://www.linkedin.com/in/abid-khan-ak';
+        }
+
+        function redirectToGitHub() {
+            // Add your GitHub URL here
+            window.location.href = 'https://github.com/AbidKhan01ak';
+        }
+    </script>
+</body>
+
+</html>
