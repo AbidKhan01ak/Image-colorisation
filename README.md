@@ -43,6 +43,19 @@ This is a simple web application built with Flask that allows users to upload bl
 5. Once colorization is done, you will see the colorized image.
 6. Click on the "Save" button to download the colorized image to your local machine.
 
+
+   This is the inital Screen of the Web app
+   ##Initial Screen
+![Initial screen](https://github.com/AbidKhan01ak/Image-colorisation/blob/ee867cc6b8775dbc30225c2376708966b2945313/initialScreen.png)
+
+##Demo file
+!{Demo image](https://github.com/AbidKhan01ak/Image-colorisation/blob/bdf753bbef78979075ca5d61da0ee36534078fd8/demo.jpg)
+
+##Result
+![Result](https://github.com/AbidKhan01ak/Image-colorisation/blob/79b5511cb008ec64c13f0427c532982ba77f4756/result.png)
+
+Click Save button to download the colorised image in your computer
+
 ## Credits
 
 - This project uses a pre-trained deep learning model for colorization. The model is based on the paper "Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification" by Zhang et al.
