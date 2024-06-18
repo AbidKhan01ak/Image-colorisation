@@ -46,17 +46,17 @@ This is a simple web application built with Flask that allows users to upload bl
 
    This is the inital Screen of the Web app
    
-   ##Initial Screen
+   ## Initial Screen
    
 ![Initial screen](https://github.com/AbidKhan01ak/Image-colorisation/blob/ee867cc6b8775dbc30225c2376708966b2945313/initialScreen.png)
 
-##Demo image
+## Demo image
 
 ![Demo image](https://github.com/AbidKhan01ak/Image-colorisation/blob/bdf753bbef78979075ca5d61da0ee36534078fd8/demo.jpg)
 
 
 
-##Result
+## Result
 
 ![Result](https://github.com/AbidKhan01ak/Image-colorisation/blob/79b5511cb008ec64c13f0427c532982ba77f4756/result.png)
 
